@@ -325,7 +325,7 @@
             </div>
         </div>
     </section>
-
+    <!-- LATEST POSTS -->
     <section class="latestPosts">
         <div class="container">
             <div class="latestPosts-block">
@@ -391,6 +391,7 @@
             </div>
         </div>
     </section>
+    <!-- END LATES POSTS -->
 <?php
     get_footer();
 ?>
