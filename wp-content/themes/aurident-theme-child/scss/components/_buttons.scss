@@ -1,0 +1,379 @@
+a.buttonTopContactPhone {
+    background-color: $blue;
+    height: 46px;
+    color: $white;
+    @include transitionNormal;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 1px solid $white;
+    min-width: 210px;
+    padding-left: 20px;
+    position: relative;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        height: 40px;
+        font-size:14px;
+        min-width: 180px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        height: 36px;
+        min-width: 170px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        height: 32px;
+        font-size:12px;
+        min-width: 150px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    span.phoneIconTopContact {
+        position: absolute;
+        left:20px;
+        width:19px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @include desktop-xlarge {
+            //  max-width 1919.98
+            width:16px;
+            left: 18px;
+        }
+        @include desktop-large {
+            //  max-width:1599.98
+            width:16px;
+            left:18px;
+        }
+        @include desktop {
+            //  max-width: 1439.98
+            width:14px;
+            left:16px;
+        }
+        @include desktop-small {
+            // max-width: 1365.98
+        }
+        @include tablet-large {
+            // max-width: 1199.98px
+        }
+        @include tablet-medium {
+            // max-width: 992px
+        }
+        @include tablet {
+            // max-width: 1023.98
+        }
+        @include tablet-small {
+            //  max-width:767.98
+        }
+        @include mobile {
+            // max-width:575.98
+        }
+        svg {
+            width:100%;
+            path {
+                fill:$white;
+                @include transitionNormal;
+            }
+        }
+    }
+    &:hover {
+        background-color: $white;
+        color: $blue;
+        @include transitionNormal;
+        border-color: $blue;
+        span.phoneIconTopContact {
+            svg {
+                width:100%;
+                path {
+                    fill:$blue;
+                    @include transitionNormal;
+                }
+            }
+        }
+    }
+}
+
+a.buttonTopContactPhoneMobile {
+    width:50px;
+    height: 50px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color: $blue;
+    border-radius:50%;
+    @include tablet-large {
+        width:40px;
+        height: 40px;
+    }
+    @include tablet-small {
+        width:32px;
+        height: 32px;
+    }
+    span.phoneIconTopContactMobile {
+        width: 17px;
+        position: absolute;
+        height: 17px;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        @include tablet-large {
+            width:15px;
+            height: 15px;
+            margin-top:-2px;
+        }
+        @include tablet-small {
+            width:14px;
+            height: 14px;
+            margin-top:-3px;
+        }
+        svg {
+            width:100%;
+            path {
+                fill: $white;
+            }
+        }
+    }
+}
+a.buttonOne {
+    min-width:210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 22px;
+    height: 46px;
+    color: #707070;
+    @include transitionNormal;
+    text-transform: uppercase;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size:16px;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        height: 40px;
+        font-size:14px;
+        min-width: 180px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        height: 36px;
+        min-width: 170px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        height: 32px;
+        font-size:12px;
+        min-width: 150px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    &:hover {
+        @include transitionNormal;
+        background-color: $blue;
+        color: $white;
+    }
+}
+a.buttonTwo {
+    min-width:210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 22px;
+    height: 46px;
+    color: #707070;
+    border:1px solid $white;
+    @include transitionNormal;
+    text-transform: uppercase;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size:16px;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        height: 40px;
+        font-size:14px;
+        min-width: 180px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        height: 36px;
+        min-width: 170px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        height: 32px;
+        font-size:12px;
+        min-width: 150px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    &:hover {
+        @include transitionNormal;
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+a.buttonBlue {
+    min-width:210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    border-radius: 22px;
+    height: 46px;
+    color: $white;
+    @include transitionNormal;
+    text-transform: uppercase;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size:16px;
+    width:auto;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        height: 40px;
+        font-size:14px;
+        min-width: 180px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        height: 36px;
+        min-width: 170px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        height: 32px;
+        font-size:12px;
+        min-width: 150px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    &:hover {
+        @include transitionNormal;
+        background-color: $white;
+        color: $blue;
+        border:1px solid $blue;
+    }
+}
+a.buttonWhite {
+    min-width:210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 22px;
+    height: 46px;
+    color: $blue;
+    border: 1px solid $blue;
+    @include transitionNormal;
+    text-transform: uppercase;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size:16px;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        height: 40px;
+        font-size:14px;
+        min-width: 180px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        height: 36px;
+        min-width: 170px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        height: 32px;
+        font-size:12px;
+        min-width: 150px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    &:hover {
+        @include transitionNormal;
+        background-color: $blue;
+        color: $white;
+    }
+}
