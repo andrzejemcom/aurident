@@ -28,7 +28,7 @@
             $url = get_site_url();
         ?>
         <header class="siteHeader">
-            <div class="container">
+            <div class="container noPad">
                 <div class="siteHeader-block">
                     <div class="siteHeader-block-left">
                         <!-- NAVBAR BRAND -->

@@ -317,7 +317,7 @@
                         <?php
                             $linkMetamorphosis = get_field('linkMetamorphosisMainPage', $idPost);
                         ?>
-                        <a href="<?php echo $linkMetamorphosis['url'];?>" class="buttonTwo">
+                        <a href="<?php echo $linkMetamorphosis['url'];?>" class="buttonMetamorphosis">
                             <?php echo $linkMetamorphosis['title'];?>
                         </a>
                     </div>

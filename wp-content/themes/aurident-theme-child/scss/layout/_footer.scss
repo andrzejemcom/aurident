@@ -159,17 +159,17 @@
                     @include desktop-xlarge {
                         //  max-width 1919.98
                         font-size:24px;
-                        line-height: 22px;
+                        line-height: 32px;
                     }
                     @include desktop-large {
                         //  max-width:1599.98
                         font-size:20px;
-                        line-height: 22px;
+                        line-height: 32px;
                     }
                     @include desktop {
                         //  max-width: 1439.98
                         font-size:18px;
-                        line-height: 20px;
+                        line-height: 30px;
                     }
                     @include desktop-small {
                         // max-width: 1365.98
@@ -177,7 +177,7 @@
                     @include tablet-large {
                         // max-width: 1199.98px
                         font-size:16px;
-                        line-height: 18px;
+                        line-height: 28px;
                     }
                     @include tablet {
                         // max-width: 1023.98
