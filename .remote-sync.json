@@ -1,0 +1,18 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "serwer1418762.home.pl",
+  "target": "/public_html/autoinstalator/aurident",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "emcom@serwer1418762.home.pl",
+  "password": "Jakies123!@",
+  "watch": []
+}

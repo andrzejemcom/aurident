@@ -1496,29 +1496,29 @@
             }
             &-box {
                 width:416px;
-                height: 610px;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 border-bottom: 1px solid #e1e1e1;
                 @include desktop-xlarge {
                     //  max-width 1919.98
                     width:340px;
-                    height: 570px;
+                    height: auto;
                 }
                 @include desktop-large {
                     //  max-width:1599.98
                     width:310px;
-                    height: 510px;
+                    height: auto;
                 }
                 @include desktop {
                     //  max-width: 1439.98
-                    height: 510px;
+                    height: auto;
                     width: 296px;
                 }
                 @include desktop-small {
                     // max-width: 1365.98
                     width:270px;
-                    height: 470px;
+                    height: auto;
                 }
                 @include tablet-large {
                     // max-width: 1199.98px
@@ -1691,27 +1691,32 @@
                     }
                 }
                 &-title {
-                    font-size:22px;
+                    font-size:24px;
                     color: $blue;
                     font-weight: bold;
                     margin-top: 30px;
+                    height: 85px;
                     @include desktop-xlarge {
                         //  max-width 1919.98
                         font-size:20px;
+                        min-height: 86px;
                     }
                     @include desktop-large {
                         //  max-width:1599.98
-                        font-size:18px;
+                        font-size:20px;
                         margin-top: 24px;
+                        height: 86px;
                     }
                     @include desktop {
                         //  max-width: 1439.98
-                        font-size: 18px;
+                        font-size: 20px;
                         margin-top:20px;
+                        height: 84px;
                     }
                     @include desktop-small {
                         // max-width: 1365.98
-                        font-size:16px;
+                        font-size:18px;
+                        height: 82px;
                     }
                     @include tablet-large {
                         // max-width: 1199.98px
@@ -1721,11 +1726,13 @@
                     }
                     @include tablet-medium {
                         // max-width: 992px
-                        font-size:14px;
+                        font-size:16px;
+                        height: 80px;
                     }
                     @include tablet-small {
                         //  max-width:767.98
-                        font-size:20px;
+                        font-size:22px;
+                        height: 88px;
                     }
                     @include mobile {
                         // max-width:575.98
