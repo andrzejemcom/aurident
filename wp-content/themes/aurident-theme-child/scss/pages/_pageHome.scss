@@ -1522,13 +1522,16 @@
                 }
                 @include tablet-large {
                     // max-width: 1199.98px
+                    height: 520px;
                 }
                 @include tablet {
                     // max-width: 1023.98
+                    height: 500px;
                 }
                 @include tablet-medium {
                     // max-width: 992px
                     width:200px;
+                    height: 480px;
                 }
                 @include tablet-small {
                     //  max-width:767.98
