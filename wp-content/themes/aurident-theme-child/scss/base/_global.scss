@@ -4,4 +4,76 @@
 .noPad {
     padding-left:0;
     padding-right: 0;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.mobileShow {
+    display: none !important;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+    }
+    @include desktop {
+        //  max-width: 1439.98
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+        display: flex !important;
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet-small {
+        //  max-width:767.98
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+}
+
+.marBot80 {
+    margin-bottom:80px;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+        margin-bottom:75px;
+    }
+    @include desktop {
+        //  max-width: 1439.98
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+        margin-bottom:70px;
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+    }
+    @include tablet {
+        // max-width: 1023.98
+        margin-bottom:65px;
+    }
+    @include tablet-medium {
+        // max-width: 992px
+        margin-bottom:60px;
+    }
+    @include tablet-small {
+        //  max-width:767.98
+        margin-bottom: 55px;
+    }
+    @include mobile {
+        // max-width:575.98
+        margin-bottom:50px;
+    }
 }

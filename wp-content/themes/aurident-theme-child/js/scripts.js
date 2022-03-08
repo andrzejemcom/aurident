@@ -25,6 +25,23 @@
             clickable: true,
         },
     });
+    var sliderSimilarPosts = new Swiper('.similarPostsSlider', {
+        autoplay: {
+            delay:3500,
+            disableOnInteraction: false,
+        },
+        slidesPerView:1,
+        speed: 2500,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+    });
 
     var sliderWhatWeDoMainPage = new Swiper('.whatWeDoSliderMainPage', {
         autoplay: {
