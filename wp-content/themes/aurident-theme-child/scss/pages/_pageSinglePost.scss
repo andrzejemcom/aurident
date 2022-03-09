@@ -866,6 +866,20 @@
                     .swiper-pagination {
                         left:50%;
                         transform: translateX(-50%);
+                        display: flex;
+                        align-items: center;
+                        .swiper-pagination-bullet {
+                            margin-left:5px;
+                            margin-right: 5px;
+                            background:#2652bf;
+                            opacity: 1;
+                            width: 4px;
+                            height: 4px;
+                        }
+                        .swiper-pagination-bullet-active {
+                            width: 8px;
+                            height: 8px;
+                        }
                     }
                 }
             }
