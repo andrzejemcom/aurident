@@ -32,4 +32,5 @@
     		'menu-glowne' => esc_html__( 'Primary', 'aurident-theme-child' ),
     	)
     );
+    
 ?>
