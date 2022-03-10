@@ -236,6 +236,7 @@
                     img {
                         width: 100%;
                         height: max-content;
+                        object-fit: contain;
                         @include desktop {
                             height: auto;
                         }
