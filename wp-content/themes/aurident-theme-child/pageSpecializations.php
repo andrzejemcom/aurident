@@ -48,4 +48,47 @@
     </div>
 </section>
 
+<?php
+    $activeSectionTwo = get_field('sectionTwoActive', $idPost);
+    if($activeSectionTwo[0] == 'yes'):
+?>
+    <section class="greySection">
+        <div class="container noPad">
+            <div class="greySection-content">
+                <div class="greySection-content-left">
+                    <div class="greySection-content-left-header">
+                        <?php the_field('leftHeaderSectionTwo', $idPost);?>
+                    </div>
+                    <div class="greySection-content-left-description">
+                        <?php the_field('descriptionSectionTwo', $idPost); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="greySection-image">
+            <?php
+                $imageSectionTwo = get_field('imageRightBox', $idPost);
+            ?>
+            <img src="<?php echo $imageSectionTwo['url'];?>" />
+        </div>
+    </section>
+<?php
+    endif;
+?>
+
+<?php
+    $activeSectionThree = get_field('mainDescriptionActive', $idPost);
+    if($activeSectionThree[0] == 'yes'):
+?>
+    <section class="mainDescriptionSpecialization">
+        <div class="container">
+            <div class="mainDescriptionSpecialization-content">
+                <?php the_field('mainDescriptionContent', $idPost);?>
+            </div>
+        </div>
+    </section>
+<?php
+    endif;
+?>
+
 <?php get_footer(); ?>
