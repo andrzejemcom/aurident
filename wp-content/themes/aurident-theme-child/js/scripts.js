@@ -132,3 +132,19 @@
         },
         loop: true,
     });
+
+    // ACCORDION SERVICES PRICES
+
+    function showAccordionServices(param) {
+        if(jQuery('#descriptionPrice'+param).hasClass('showAccordionServicesBlock')) {
+            jQuery('#descriptionPrice'+param).slideUp('slow');
+            jQuery('#descriptionPrice'+param).removeClass('showAccordionServicesBlock');
+            jQuery('#plusShowId'+param).removeClass('hidePlusShow');
+            jQuery('#minusShowId'+param).removeClass('showMinusShow');
+        } else {
+            jQuery('#descriptionPrice'+param).slideDown('slow');
+            jQuery('#descriptionPrice'+param).addClass('showAccordionServicesBlock');
+            jQuery('#plusShowId'+param).addClass('hidePlusShow');
+            jQuery('#minusShowId'+param).addClass('showMinusShow');
+        }
+    }
