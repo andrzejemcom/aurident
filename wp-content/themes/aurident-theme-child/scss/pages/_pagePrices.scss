@@ -1,0 +1,57 @@
+.pricesPage {
+    margin-top:170px;
+    display: flex;
+    @include desktop-xlarge {
+        //  max-width 1919.98
+        margin-top:150px;
+    }
+    @include desktop-large {
+        //  max-width:1599.98
+    }
+    @include desktop {
+        //  max-width: 1439.98
+        margin-top:130px;
+    }
+    @include desktop-small {
+        // max-width: 1365.98
+        margin-top:120px;
+    }
+    @include tablet-large {
+        // max-width: 1199.98px
+        margin-top:110px;
+    }
+    @include tablet {
+        // max-width: 1023.98
+    }
+    @include tablet-medium {
+        // max-width: 992px
+    }
+    @include tablet-small {
+        //  max-width:767.98
+        margin-top:75px;
+    }
+    @include mobile {
+        // max-width:575.98
+    }
+    &-content {
+        margin-top:70px;
+        display: flex;
+        flex-direction: column;
+        &-header {
+            display: flex;
+            h1 {
+                font-size:36px;
+                color: $blue;
+                font-weight: normal;
+                text-transform: uppercase;
+                font-family: 'Tenor Sans', sans-serif;
+
+            }
+        }
+        &-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
