@@ -372,20 +372,21 @@
     position: relative;
     &-image {
         position:absolute;
-        top:190px;
+        top:50%;
+        transform: translateY(-50%);
         right:0;
         max-height: 457px;
         overflow: hidden;
         max-width:820px;
         @include desktop-xlarge {
             //  max-width 1919.98
-            top:170px;
+
             max-width:780px;
             max-height: 440px;
         }
         @include desktop-large {
             //  max-width:1599.98
-            top: 150px;
+
             max-width: 640px;
             max-height: 420px;
         }
@@ -393,7 +394,7 @@
             //  max-width: 1439.98
             max-height: 325px;
             max-width:578px;
-            top:140px;
+
         }
         @include desktop-small {
             // max-width: 1365.98
@@ -407,7 +408,7 @@
         }
         @include tablet {
             // max-width: 1023.98
-            top:100px;
+
             max-height: 370px;
             max-width: 480px;
         }
@@ -415,10 +416,10 @@
             // max-width: 992px
             width:95%;
             max-height: 400px;
-            top:50px;
+
             max-width: 95%;
             left:50%;
-            transform:translateX(-50%);
+            transform:translate(-50%, -50%);
         }
         @include tablet-small {
             //  max-width:767.98

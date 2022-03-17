@@ -148,3 +148,13 @@
             jQuery('#minusShowId'+param).addClass('showMinusShow');
         }
     }
+
+    function showModalRegistration() {
+        jQuery('#zapisy').toggleClass('showModal');
+        jQuery('#bcgModal').toggleClass('showBcgModal');
+    }
+
+    jQuery('.closeRegistration').click(function(){
+        jQuery('#zapisy').removeClass('showModal');
+        jQuery('#bcgModal').removeClass('showBcgModal');
+    });

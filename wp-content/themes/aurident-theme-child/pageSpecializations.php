@@ -31,7 +31,7 @@
                     <?php
                         $linkButton = get_field('linkButtonHero', $idPost);
                     ?>
-                    <a href="<?php echo $linkButton['url'];?>" class="buttonBlue">
+                    <a href="<?php echo $linkButton['url'];?>" class="buttonBlue" id="registrationOnline" onclick="showModalRegistration()">
                         <?php echo $linkButton['title'];?>
                     </a>
                 </div>

@@ -11,6 +11,23 @@
 
  $urlFooter = get_site_url();
 ?>
+<div class="modalBcg" id="bcgModal"></div>
+<div class="modal fade" id="zapisy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="closeRegistration" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="headerModal padTop50 padLeft50">
+                <h2 class="headerSections noTextCenter marBot20">Umów wizytę</h2>
+            </div>
+            <div class="contactForm padLeft50">
+                <?php echo do_shortcode('[contact-form-7 id="14" title="Rejestracja"]');?>
+            </div>
+        </div>
+    </div>
+</div>
+
         <footer id="auridentFooter" class="siteFooter">
             <div class="container">
                 <div class="siteFooter-block">
@@ -65,7 +82,7 @@
                                 <?php echo $bankInformation;?>
                             </div>
                             <div class="siteFooter-block-content-address-button">
-                                <a href="<?php echo $linkOnlineFooter['url'];?>" class="buttonTwo">
+                                <a href="#" class="buttonTwo" onclick="showModalRegistration()">
                                     <?php echo $linkOnlineFooter['title'];?>
                                 </a>
                             </div>
