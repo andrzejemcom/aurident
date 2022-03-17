@@ -95,7 +95,7 @@
                                             <?php echo $datePost;?>
                                         </div>
                                         <div class="latestPosts-block-content-box-title">
-                                            <?php echo $titlePost;?>
+                                            <?php echo $shortTitle;?>
                                         </div>
                                         <div class="latestPosts-block-content-box-description">
                                             <?php echo $shortDescription;?>

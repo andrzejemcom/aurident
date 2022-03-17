@@ -17,7 +17,7 @@
         <div class="heroSpecializations-content">
             <div class="heroSpecializations-content-left">
                 <div class="heroSpecializations-content-left-littleHeader">
-                    Usługi
+                    <?php the_field('littleHeader', $idPost);?>
                 </div>
                 <div class="heroSpecializations-content-left-header">
                     <h1>

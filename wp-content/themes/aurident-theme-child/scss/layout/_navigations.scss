@@ -106,6 +106,7 @@ ul#main-menu {
             padding:10px;
             left:10px;
             min-width: 105px;
+            flex-direction: column;
             li {
                 max-width: 155px;
                 margin-bottom:10px;
@@ -148,7 +149,7 @@ ul#main-menu {
             background-color: $blue;
             border-radius: 5px;
             padding:10px;
-            max-height: 320px;
+            max-height: 340px;
             max-width:317px;
             flex-direction: column;
             flex-wrap: wrap;

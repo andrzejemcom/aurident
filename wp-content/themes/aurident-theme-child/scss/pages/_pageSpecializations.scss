@@ -221,9 +221,13 @@
                     }
                     @include desktop-large {
                         //  max-width:1599.98
+                        font-size:14px;
+                        line-height: 24px;
                     }
                     @include desktop {
                         //  max-width: 1439.98
+                        font-size:12px;
+                        line-height: 22px;
                     }
                     @include desktop-small {
                         // max-width: 1365.98
@@ -239,6 +243,8 @@
                     }
                     @include tablet-small {
                         //  max-width:767.98
+                        font-size:14px;
+                        line-height: 24px;
                     }
                     @include mobile {
                         // max-width:575.98
@@ -543,6 +549,7 @@
                     //  max-width:767.98
                     font-size:26px;
                     line-height: 36px;
+                    margin-top:50px;
                 }
                 @include mobile {
                     // max-width:575.98
@@ -578,6 +585,120 @@
                 }
                 @include mobile {
                     // max-width:575.98
+                }
+                ul {
+                    margin-left: 0;
+                    padding-left:0;
+                    margin-bottom:20px;
+                    @include desktop-xlarge {
+                        //  max-width 1919.98
+                    }
+                    @include desktop-large {
+                        //  max-width:1599.98
+                    }
+                    @include desktop {
+                        //  max-width: 1439.98
+                    }
+                    @include desktop-small {
+                        // max-width: 1365.98
+                    }
+                    @include tablet-large {
+                        // max-width: 1199.98px
+                    }
+                    @include tablet {
+                        // max-width: 1023.98
+                    }
+                    @include tablet-medium {
+                        // max-width: 992px
+                    }
+                    @include tablet-small {
+                        //  max-width:767.98
+                    }
+                    @include mobile {
+                        // max-width:575.98
+                    }
+                    li {
+                        padding-left:30px;
+                        position: relative;
+                        font-size:16px;
+                        color: #60778e;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        @include desktop-xlarge {
+                            //  max-width 1919.98
+                        }
+                        @include desktop-large {
+                            //  max-width:1599.98
+                            font-size:14px;
+                            line-height: 24px;
+                        }
+                        @include desktop {
+                            //  max-width: 1439.98
+                            font-size:12px;
+                            line-height: 22px;
+                            padding-left:20px;
+                        }
+                        @include desktop-small {
+                            // max-width: 1365.98
+                        }
+                        @include tablet-large {
+                            // max-width: 1199.98px
+                        }
+                        @include tablet {
+                            // max-width: 1023.98
+                        }
+                        @include tablet-medium {
+                            // max-width: 992px
+                        }
+                        @include tablet-small {
+                            //  max-width:767.98
+                            font-size:14px;
+                            line-height: 24px;
+                        }
+                        @include mobile {
+                            // max-width:575.98
+                        }
+                        &:last-child {
+                            margin-bottom:0;
+                        }
+                        &:after {
+                            position: absolute;
+                            left:0;
+                            width:20px;
+                            height: 1px;
+                            background-color: $blue;
+                            content:'';
+                            @include desktop-xlarge {
+                                //  max-width 1919.98
+                            }
+                            @include desktop-large {
+                                //  max-width:1599.98
+                            }
+                            @include desktop {
+                                //  max-width: 1439.98
+                                width:14px;
+                            }
+                            @include desktop-small {
+                                // max-width: 1365.98
+                            }
+                            @include tablet-large {
+                                // max-width: 1199.98px
+                            }
+                            @include tablet {
+                                // max-width: 1023.98
+                            }
+                            @include tablet-medium {
+                                // max-width: 992px
+                            }
+                            @include tablet-small {
+                                //  max-width:767.98
+                            }
+                            @include mobile {
+                                // max-width:575.98
+                            }
+                        }
+                    }
                 }
                 p {
                     font-size: 16px;
@@ -628,6 +749,7 @@
 .mainDescriptionSpecialization {
     position:relative;
     margin-top:40px;
+    margin-bottom:50px;
     @include desktop-xlarge {
         //  max-width 1919.98
     }
@@ -658,29 +780,75 @@
     }
     &-content {
         position:relative;
+        h2 {
+            font-size:46px;
+            color: $blue;
+            font-family: 'Tenor Sans', sans-serif;
+            margin-bottom:35px;
+            margin-top:50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include desktop-xlarge {
+                //  max-width 1919.98
+                font-size:44px;
+                margin-bottom:32px;
+                margin-top:45x;
+            }
+            @include desktop-large {
+                //  max-width:1599.98
+                font-size:42px;
+                margin-bottom:30px;
+                margin-top:40px;
+            }
+            @include desktop {
+                //  max-width: 1439.98
+                font-size:40px;
+                margin-bottom:30px;
+                margin-top:40px;
+            }
+            @include desktop-small {
+                // max-width: 1365.98
+            }
+            @include tablet-large {
+                // max-width: 1199.98px
+            }
+            @include tablet {
+                // max-width: 1023.98
+            }
+            @include tablet-medium {
+                // max-width: 992px
+                font-size:38px;
+            }
+            @include tablet-small {
+                //  max-width:767.98
+            }
+            @include mobile {
+                // max-width:575.98
+            }
+        }
         h3 {
             font-size:36px;
             color: $blue;
             font-family: 'Tenor Sans', sans-serif;
             margin-bottom:35px;
-            margin-top:85px;
+            margin-top:50px;
             @include desktop-xlarge {
                 //  max-width 1919.98
                 font-size:32px;
                 margin-bottom:32px;
-                margin-top:80px;
+                margin-top:45x;
             }
             @include desktop-large {
                 //  max-width:1599.98
                 font-size:28px;
                 margin-bottom:30px;
-                margin-top:70px;
+                margin-top:40px;
             }
             @include desktop {
                 //  max-width: 1439.98
                 font-size:26px;
                 margin-bottom:30px;
-                margin-top:60px;
+                margin-top:40px;
             }
             @include desktop-small {
                 // max-width: 1365.98
@@ -712,10 +880,12 @@
             @include desktop-large {
                 //  max-width:1599.98
                 font-size:14px;
+                line-height: 24px;
             }
             @include desktop {
                 //  max-width: 1439.98
                 font-size:12px;
+                line-height: 22px;
             }
             @include desktop-small {
                 // max-width: 1365.98
@@ -731,17 +901,20 @@
             }
             @include tablet-small {
                 //  max-width:767.98
+                font-size:14px;
+                line-height: 24px;
             }
             @include mobile {
                 // max-width:575.98
             }
-            &:last-child() {
+            &:last-child {
                 margin-bottom:0;
             }
         }
         ul {
             margin-left: 0;
             padding-left:0;
+            margin-bottom:20px;
             @include desktop-xlarge {
                 //  max-width 1919.98
             }
@@ -783,11 +956,13 @@
                 @include desktop-large {
                     //  max-width:1599.98
                     font-size:14px;
+                    line-height: 24px;
                 }
                 @include desktop {
                     //  max-width: 1439.98
                     font-size:12px;
-                    padding-left:20px;
+                    line-height: 22px;
+                    padding-left: 20px;
                 }
                 @include desktop-small {
                     // max-width: 1365.98
@@ -803,9 +978,14 @@
                 }
                 @include tablet-small {
                     //  max-width:767.98
+                    font-size:14px;
+                    line-height: 24px;
                 }
                 @include mobile {
                     // max-width:575.98
+                }
+                &:last-child {
+                    margin-bottom:0;
                 }
                 &:after {
                     position: absolute;

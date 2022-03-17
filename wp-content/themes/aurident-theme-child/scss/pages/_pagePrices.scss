@@ -136,6 +136,7 @@
             &-block {
                 width:700px;
                 height: auto;
+                margin-bottom:15px;
                 @include desktop-xlarge {
                     //  max-width 1919.98
                     width:590px;
@@ -473,14 +474,14 @@
                             display: flex;
                             flex-direction: row;
                             width:100%;
-                            align-items: center;
+                            align-items: flex-start;
                             justify-content: space-between;
                             margin-bottom:5px;
                             @include mobile {
                                 margin-bottom:15px;
                             }
                             &-left {
-                                width:75%;
+                                width:70%;
                                 font-size:16px;
                                 color:#60778e;
                                 line-height: 26px;
@@ -519,7 +520,7 @@
                                 }
                             }
                             &-right {
-                                width:25%;
+                                width:30%;
                                 font-weight: bold;
                                 font-size:16px;
                                 line-height: 26px;
