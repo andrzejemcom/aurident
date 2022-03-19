@@ -140,7 +140,7 @@
                 }
                 @include tablet-small {
                     //  max-width:767.98
-                    margin-top:440px;
+                    margin-top:285px;
                 }
                 h1 {
                     font-weight: normal;
@@ -361,6 +361,12 @@
                 }
                 @include mobile {
                     // max-width:575.98
+                    max-height: 240px;
+                    img {
+                        width:100%;
+                        height: auto;
+                        max-height: inherit;
+                    }
                 }
             }
         }
@@ -416,7 +422,6 @@
             // max-width: 992px
             width:95%;
             max-height: 400px;
-
             max-width: 95%;
             left:50%;
             transform:translate(-50%, -50%);
@@ -424,11 +429,21 @@
         @include tablet-small {
             //  max-width:767.98
             max-height: 300px;
+            transform: none;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
         }
         @include mobile {
             // max-width:575.98
-            max-height: 220px;
-            height: 220px;
+            max-height: inherit;
+            height: auto;
+            transform: none;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 360px;
         }
         img {
             height: auto;
@@ -506,7 +521,7 @@
             }
             @include mobile {
                 // max-width:575.98
-                margin-top:260px;
+                margin-top:180px;
             }
             &-header {
                 font-size:36px;
@@ -625,7 +640,6 @@
                         color: #60778e;
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
                         @include desktop-xlarge {
                             //  max-width 1919.98
                         }
@@ -668,6 +682,7 @@
                             left:0;
                             width:20px;
                             height: 1px;
+                            top:12px;
                             background-color: $blue;
                             content:'';
                             @include desktop-xlarge {
@@ -950,7 +965,6 @@
                 color: #60778e;
                 display: flex;
                 flex-direction: row;
-                align-items: center;
                 @include desktop-xlarge {
                     //  max-width 1919.98
                 }
@@ -993,6 +1007,7 @@
                     left:0;
                     width:20px;
                     height: 1px;
+                    top:12px;
                     background-color: $blue;
                     content:'';
                     @include desktop-xlarge {

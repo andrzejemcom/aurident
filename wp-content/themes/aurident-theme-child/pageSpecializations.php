@@ -11,7 +11,21 @@
     $idPost = get_the_ID();
     $url = get_site_url();
 ?>
+<?php
+    $linkButton = get_field('linkButtonHero', $idPost);
+    $image = get_field('imageHeroTop', $idPost);
+    $shortDescription = get_field('shortDescription',$idPost);
 
+    if(empty($linkButton) && empty($image) && empty($shortDescription)) :
+?>
+    <style>
+        .heroSpecializations-content {
+            height: auto;
+        }
+    </style>
+<?php
+    endif;
+?>
 <section class="heroSpecializations">
     <div class="container noPad">
         <div class="heroSpecializations-content">
@@ -27,22 +41,32 @@
                 <div class="heroSpecializations-content-left-description">
                     <?php the_field('shortDescription', $idPost);?>
                 </div>
+                <?php
+
+                    if(!empty($linkButton)):
+                ?>
                 <div class="heroSpecializations-content-left-button">
-                    <?php
-                        $linkButton = get_field('linkButtonHero', $idPost);
-                    ?>
+
                     <a href="<?php echo $linkButton['url'];?>" class="buttonBlue" id="registrationOnline" onclick="showModalRegistration()">
                         <?php echo $linkButton['title'];?>
                     </a>
                 </div>
+
+                <?php
+                    endif;
+                ?>
             </div>
             <div class="heroSpecializations-content-right">
+                <?php
+
+                    if(!empty($image)):
+                ?>
                 <div class="heroSpecializations-content-right-image">
-                    <?php
-                        $image = get_field('imageHeroTop', $idPost);
-                    ?>
                     <img src="<?php echo $image['url']; ?>" />
                 </div>
+                <?php
+                    endif;
+                ?>
             </div>
         </div>
     </div>
@@ -81,7 +105,7 @@
     if($activeSectionThree[0] == 'yes'):
 ?>
     <section class="mainDescriptionSpecialization">
-        <div class="container">
+        <div class="container noPad">
             <div class="mainDescriptionSpecialization-content">
                 <?php the_field('mainDescriptionContent', $idPost);?>
             </div>

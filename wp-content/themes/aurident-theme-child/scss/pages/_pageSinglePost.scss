@@ -198,6 +198,9 @@
                         left:0;
                         top: 420px;
                     }
+                    @include mobile {
+                        top:300px;
+                    }
                     &-date {
                         color: $blue;
                         font-weight: bold;
@@ -421,6 +424,7 @@
                     }
                     @include tablet-small {
                         //  max-width:767.98
+                        bottom:-20px;
                     }
                     @include mobile {
                         // max-width:575.98
@@ -434,10 +438,28 @@
                     @include tablet-medium {
                         height: 280px;
                     }
+                    @include tablet-small {
+                        height: auto;
+                        max-height: 340px;
+                    }
+                    @include mobile {
+                        width:100%;
+                    }
                     img {
-                        max-width: -webkit-fill-available;
-                        height: 100%;
+                        
                         width:-webkit-fill-available;
+                        @include tablet-small {
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                            object-fit: cover;
+                        }
+                        @include mobile {
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
@@ -478,11 +500,12 @@
             }
             @include tablet-small {
                 //  max-width:767.98
-                margin-top:340px;
+                margin-top:290px;
                 flex-direction: column;
             }
             @include mobile {
                 // max-width:575.98
+                margin-top:390px;
             }
             &-mainDescription {
                 width: 852px;

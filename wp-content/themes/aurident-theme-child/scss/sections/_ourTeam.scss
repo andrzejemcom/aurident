@@ -249,6 +249,7 @@
                     position: relative;
                     color: $grey;
                     text-transform: uppercase;
+                    text-align: center;
                     @include desktop-xlarge {
                         //  max-width 1919.98
                         font-size:24px;
@@ -357,6 +358,7 @@
                     @include tablet-small {
                         //  max-width:767.98
                         font-size:14px;
+                        text-align: center;
                     }
                     @include mobile {
                         // max-width:575.98
