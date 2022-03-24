@@ -22,6 +22,21 @@
         .heroSpecializations-content {
             height: auto;
         }
+        @media all and (max-width:767.98px) {
+            .heroSpecializations-content-left-header {
+                margin-top:50px !important;
+            }
+            .heroSpecializations-content-left {
+                margin-bottom:0;
+            }
+            .heroSpecializations-content-left-description {
+                margin-top:0;
+            }
+            .mainDescriptionSpecialization-content h2 {
+                font-size:34px;
+            }
+        }
+
     </style>
 <?php
     endif;
