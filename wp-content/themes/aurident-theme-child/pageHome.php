@@ -39,11 +39,11 @@
                         <div class="swiper-slide">
                             <div class="sliderTop-content-block">
                                 <div class="ellipseSlider">
-                                    <img src="<?php the_field('ellipseSlider', 'options');?>" />
+                                    <img src="<?php the_field('ellipseSlider', 'options');?>" loading="lazy" />
                                 </div>
                                 <div class="backgroundSlider"></div>
                                 <div class="sliderTop-content-block-image">
-                                    <img src="<?php echo $image['url'];?>" />
+                                    <img src="<?php echo $image['url'];?>" loading="lazy" />
                                 </div>
                                 <div class="sliderTop-content-block-box">
                                     <div class="sliderTop-content-block-box-text">
@@ -82,10 +82,10 @@
                             $imageTwo = get_field('imageTwoSectionTwo', $idPost);
                         ?>
                         <div class="whyWe-bcg-content-fullMobile-imageOne">
-                            <img src="<?php echo $imageOne['url']; ?>" />
+                            <img src="<?php echo $imageOne['url']; ?>" loading="lazy"/>
                         </div>
                         <div class="whyWe-bcg-content-fullMobile-imageTwo">
-                            <img src="<?php echo $imageTwo['url']; ?>" />
+                            <img src="<?php echo $imageTwo['url']; ?>" loading="lazy"/>
                         </div>
                     </div>
                     <div class="whyWe-bcg-content-left">
@@ -121,10 +121,10 @@
                     </div>
                     <div class="whyWe-bcg-content-right">
                         <div class="whyWe-bcg-content-right-imageOne">
-                            <img src="<?php echo $imageOne['url'];?>" />
+                            <img src="<?php echo $imageOne['url'];?>" loading="lazy" />
                         </div>
                         <div class="whyWe-bcg-content-right-imageTwo">
-                            <img src="<?php echo $imageTwo['url'];?>" />
+                            <img src="<?php echo $imageTwo['url'];?>" loading="lazy"/>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
                             if(!empty($imageAboutUsMainPage)):
                         ?>
                             <div class="aboutUsMainPage-bcg-content-left-image">
-                                <img src="<?php echo $imageAboutUsMainPage['url'];?>" />
+                                <img src="<?php echo $imageAboutUsMainPage['url'];?>" loading="lazy"/>
                             </div>
                         <?php
                             endif;
@@ -264,7 +264,7 @@
                             <div class="swiper-slide">
                                 <div class="ourTeamSlider-content-block-box">
                                     <div class="ourTeamSlider-content-block-box-image">
-                                        <img src="<?php echo $image['url'];?>" />
+                                        <img src="<?php echo $image['url'];?>" loading="lazy"/>
                                     </div>
                                     <div class="ourTeamSlider-content-block-box-title">
                                         <?php the_sub_field('nameLastName');?>
@@ -296,13 +296,13 @@
                 <?php
                     $imageMetamorphosis = get_field('imageMetamorphosisMainPage', $idPost);
                 ?>
-                <img src="<?php echo $imageMetamorphosis['url'];?>" />
+                <img src="<?php echo $imageMetamorphosis['url'];?>" loading="lazy"/>
             </div>
         </div>
         <div class="metamorphosisMainPage-right">
             <div class="metamorphosisMainPage-right-bcg">
                 <div class="metamorphosisMainPage-right-bcg-circle">
-                    <img src="/wp-content/uploads/2022/02/Mask-Group-1.png  " />
+                    <img src="/wp-content/uploads/2022/02/Mask-Group-1.png  " loading="lazy"/>
                 </div>
                 <div class="metamorphosisMainPage-right-bcg-block">
                     <div class="metamorphosisMainPage-right-bcg-block-header">
@@ -367,7 +367,7 @@
                                         <a href="<?php echo $permalinkPost;?>">
                                             <div class="latestPosts-block-content-box-image">
                                                 <div class="latestPosts-block-content-box-image-hide">
-                                                    <img src="<?php echo $image;?>" alt="<?php echo $titlePost;?>" />
+                                                    <img src="<?php echo $image;?>" alt="<?php echo $titlePost;?>" loading="lazy"/>
                                                 </div>
                                                 <div class="latestPosts-block-content-box-image-smallCircle"></div>
                                             </div>
